@@ -12,7 +12,7 @@ export default function Form() {
     e.preventDefault();
   
 
-    const res = await fetch('http://localhost:3000/api/addpost',{
+    const res = await fetch(`https://next-js-13-crud-playground.vercel.app/api/addpost`,{
         method: 'POST',
         body: JSON.stringify({title,content})
     })

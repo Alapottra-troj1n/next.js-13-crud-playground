@@ -1,5 +1,5 @@
 export default async function getAllPosts() {
-    const res = await fetch('http://localhost:3000/api/get-all-posts', {cache:"no-store"});
+    const res = await fetch('https://next-js-13-crud-playground.vercel.app/api/get-all-posts', {cache:"no-store"});
 
     return res.json()
 }
