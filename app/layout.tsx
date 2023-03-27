@@ -1,4 +1,14 @@
 import './globals.css'
+import { Poppins } from 'next/font/google'
+import Navbar from './components/Navbar'
+
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ["200", "400", "600", "800"],
+  variable: "--font-poppins",
+
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html className={`${poppins.variable} font-poppins`}>
+      <body className='bg-gray-800 text-white'>
+        <Navbar/>
+        {children}
+        </body>
     </html>
   )
 }
