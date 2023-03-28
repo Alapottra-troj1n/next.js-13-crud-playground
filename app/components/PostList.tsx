@@ -22,3 +22,4 @@ export default async function PostList() {
   </div>
   );
 }
+export const revalidate = 10;
