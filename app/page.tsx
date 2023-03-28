@@ -1,8 +1,10 @@
+
 import { Suspense } from "react";
 import Form from "./components/Form";
 import PostList from "./components/PostList";
 
 export default function Home() {
+ 
   return (
     <main>
       <div className="mt-6 container mx-auto">

@@ -12,7 +12,7 @@ export default function Form() {
     e.preventDefault();
   
 
-    const res = await fetch(`https://next-js-13-crud-playground.vercel.app/api/addpost`,{
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/addpost`,{
         method: 'POST',
         body: JSON.stringify({title,content})
     })
