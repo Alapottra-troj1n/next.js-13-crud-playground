@@ -3,7 +3,7 @@
 import Form from "./components/Form";
 import PostList from "./components/PostList";
 
-export default function Home() {
+export default async function Home() {
  
   return (
     <main>
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-10 items-center mt-28">
           <Form />
             {/* @ts-expect-error Async Server Component */}
-            <PostList />
+          <PostList />
         </div>
       </div>
     </main>
