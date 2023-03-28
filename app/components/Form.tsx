@@ -12,7 +12,7 @@ export default function Form() {
     e.preventDefault();
   
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/addpost`,{
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/addpost`,{
         method: 'POST',
         body: JSON.stringify({title,content})
     })
