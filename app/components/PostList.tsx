@@ -18,4 +18,5 @@ export default async function PostList() {
   );
 }
 
-export const revalidate = 10;
+
+
