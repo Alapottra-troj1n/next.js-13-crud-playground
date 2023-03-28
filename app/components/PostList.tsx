@@ -2,16 +2,12 @@ import getAllPosts from "@/lib/getAllPosts";
 import { Post } from "@/types";
 import PostComponent from "./PostComponent";
 
-type responseProp = {
-  success: boolean;
-  posts: Post[];
-};
 
 
 export default async function PostList() {
-  const posts: responseProp = await getAllPosts();
+  const posts: Post[] = await getAllPosts();
 
-  const content = posts.posts.map((post) => (
+  const content = posts.map((post) => (
     <PostComponent key={post.id} post={post} />
   ));
 
