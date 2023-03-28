@@ -3,7 +3,7 @@ import { Post } from "@/types";
 import PostComponent from "./PostComponent";
 
 
-
+export const revalidate = 10;
 export default async function PostList() {
   const posts: Post[] = await getAllPosts();
 
