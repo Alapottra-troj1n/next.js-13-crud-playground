@@ -9,7 +9,7 @@ type responseProp = {
 }
 
 export default async function PostList() {
-  const postsData: Promise<responseProp> = await getAllPosts();
+  const postsData: Promise<responseProp> = getAllPosts();
   const posts = await postsData;
 
   const content = posts.posts.map((post) => <PostComponent key={post.id} post={post} />);
