@@ -1,7 +1,6 @@
 "use client";
 
 import deletePost from "@/lib/deletePost";
-import { Post } from "@/types";
 import { useRouter } from "next/navigation";
 import React, { useTransition } from "react";
 
